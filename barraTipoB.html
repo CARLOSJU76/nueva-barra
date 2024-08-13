@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar con Toggle</title>
+    <title>Botón flotante</title>
     <link rel="stylesheet" href="stylos/estilos.css">
 </head>
 <body>
-
-<nav class="navbar">
-    <div class="navbar-brand">Mi Logo</div>
-    <button class="navbar-toggler" id="navbar-toggler">
-        &#9776; <!-- Ícono del menú (tres barras) -->
-    </button>
-    <div class="navbar-menu" id="navbar-menu">
-        <a href="#" class="nav-link">Inicio</a>
-        <a href="#" class="nav-link">Servicios</a>
-        <a href="#" class="nav-link">Contacto</a>
+   <div class="container">
+    <input type="checkbox" id="btn-mas">
+    <div class="redes">
+        <div id="links">
+            <a href="#" class="icon-youtube">youtube</a>
+            <a href="#" class="icon-facebook">facebook</a>
+            <a href="#" class="icon-pajarito">pajarito</a>
+            <a href="#" class="icon-pinterest">pinterest</a>
+        </div>
     </div>
-</nav>
 
-<script src="JS/script.js"></script>
+        <div class="btn-mas" id="btn-mas">
+            <label for="btn-mas" class="icon-mas2">+</label>
+
+        </div>
+   </div>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
