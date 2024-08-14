@@ -1,0 +1,25 @@
+.elemento {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+#toggleButton{
+    display: none;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+#toggleButton{
+    display: block;
+}
+    .elemento {
+        display: none; /* Oculta el elemento dentro del media query */
+    }
+
+    /* Esta clase se añadirá con JavaScript para mostrar el elemento */
+    .mostrar {
+        display: flex !important; /* Usa !important para sobrescribir el estilo de media query */
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
